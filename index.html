@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechFix KL – Laptop Repair Specialist</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════ -->
+<nav>
+  <div class="logo">Tech<span>Fix</span> KL</div>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showPage('home', this)">🏠 Home</button>
+    <button class="tab-btn"        onclick="showPage('about', this)">👥 About Us</button>
+    <button class="tab-btn"        onclick="showPage('services', this)">🔧 Services</button>
+    <button class="tab-btn"        onclick="showPage('inquiry', this)">📩 Inquiry</button>
+  </div>
+</nav>
+
+<!-- WhatsApp Floating Button -->
+<a class="wa-float" href="https://wa.me/601112345678" target="_blank" title="WhatsApp Us">💬</a>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 1 — HOME
+══════════════════════════════════════ -->
+<div id="home" class="page active">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="hero-inner">
+      <span class="hero-badge">📍 Dato' Keramat, Kuala Lumpur</span>
+      <span class="hero-icon">💻</span>
+      <h1>Your Laptop's<br><span class="hi">Best Friend</span><br>in KL.</h1>
+      <p>Fast, affordable, and honest laptop repairs. We fix what others can't — screen cracks, dead batteries, water damage, and everything in between.</p>
+      <div class="hero-btns">
+        <button class="btn-primary"
+          onclick="showPage('inquiry', document.querySelectorAll('.tab-btn')[3])">
+          Get a Free Quote
+        </button>
+        <button class="btn-secondary"
+          onclick="showPage('services', document.querySelectorAll('.tab-btn')[2])">
+          Our Services
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Strip -->
+  <div class="stats">
+    <div class="stat-card fade-in">
+      <div class="num">500+</div>
+      <div class="label">Laptops Repaired</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="num">98%</div>
+      <div class="label">Happy Customers</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="num">3yrs</div>
+      <div class="label">In Business</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="num">1hr</div>
+      <div class="label">Avg. Turnaround</div>
+    </div>
+  </div>
+
+  <!-- Why Choose Us -->
+  <div class="section-wrap">
+    <span class="pill">Why Choose Us?</span>
+    <div class="section-title">We Keep It Simple &amp; Honest.</div>
+    <p class="section-sub">No hidden charges. No upselling. Just real fixes by real people who care about your device.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Fast Turnaround</h3>
+        <p>Most repairs done same-day. Drop it off in the morning, pick it up by afternoon.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💰</div>
+        <h3>Transparent Pricing</h3>
+        <p>We quote before we fix. No surprise bills waiting for you at the counter.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <h3>Warranty on Repairs</h3>
+        <p>All parts and labour come with a 30-day warranty. We stand behind our work.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <h3>Trusted by Locals</h3>
+        <p>Hundreds of students, freelancers &amp; offices in Dato' Keramat trust us.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Customer Reviews -->
+  <div class="wa-section">
+    <div class="wa-inner">
+      <span class="pill" style="background:var(--teal); color:#fff;">Customer Love</span>
+      <div class="section-title" style="margin-top:8px;">What Our Customers Say 💬</div>
+      <p class="section-sub">Real messages from our happy customers via WhatsApp.</p>
+
+      <div class="wa-grid">
+
+        <div class="wa-card fade-in">
+          <div class="wa-header">
+            <div class="wa-avatar">👩</div>
+            <div>
+              <div style="font-weight:700;">Nurul A.</div>
+              <div style="font-size:.68rem; opacity:.7;">Customer</div>
+            </div>
+          </div>
+          <div class="wa-body">
+            <div class="wa-bubble">
+              Bro, screen dah siap! Cantik gila. Ingat dah kena beli laptop baru. Harga pun ok, tak rip off. Recommend! 🙏
+            </div>
+            <div class="wa-time">Yesterday, 3:42 PM ✓✓</div>
+            <div class="wa-star">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="wa-card fade-in">
+          <div class="wa-header">
+            <div class="wa-avatar">👨</div>
+            <div>
+              <div style="font-weight:700;">Farid H.</div>
+              <div style="font-size:.68rem; opacity:.7;">Customer</div>
+            </div>
+          </div>
+          <div class="wa-body">
+            <div class="wa-bubble">
+              Laptop kena air last week, ingat dah habis. Bawak sini, diorang fix dalam 2 jam. Semua data selamat. Legend betul! 💯
+            </div>
+            <div class="wa-time">Mon, 11:15 AM ✓✓</div>
+            <div class="wa-star">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="wa-card fade-in">
+          <div class="wa-header">
+            <div class="wa-avatar">👩</div>
+            <div>
+              <div style="font-weight:700;">Priya R.</div>
+              <div style="font-size:.68rem; opacity:.7;">Customer</div>
+            </div>
+          </div>
+          <div class="wa-body">
+            <div class="wa-bubble">
+              Battery replacement done in 45 mins! Price was RM150 which is super reasonable. The guys are friendly too 😊
+            </div>
+            <div class="wa-time">Fri, 5:08 PM ✓✓</div>
+            <div class="wa-star">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="wa-card fade-in">
+          <div class="wa-header">
+            <div class="wa-avatar">👨</div>
+            <div>
+              <div style="font-weight:700;">Aiman Z.</div>
+              <div style="font-size:.68rem; opacity:.7;">Customer</div>
+            </div>
+          </div>
+          <div class="wa-body">
+            <div class="wa-bubble">
+              Beli second hand laptop kat sini. Dapat warranty, condition tip top. Better dari beli kat Lazada tak tentu asal 👍
+            </div>
+            <div class="wa-time">Wed, 2:30 PM ✓✓</div>
+            <div class="wa-star">★★★★☆</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="location-section">
+    <div class="location-inner">
+      <span class="pill" style="background:var(--accent); color:#fff;">Find Us</span>
+      <div class="section-title" style="color:#fff; margin-top:8px;">Come Visit Our Shop 📍</div>
+
+      <div class="location-grid">
+        <div class="location-info">
+          <div class="loc-item">
+            <div class="loc-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>No. 12, Jalan Dato' Keramat 4/2,<br>Taman Dato' Keramat,<br>55300 Kuala Lumpur, Wilayah Persekutuan.</p>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon">🕐</div>
+            <div>
+              <h4>Operating Hours</h4>
+              <p>Monday – Saturday: 10:00 AM – 8:00 PM<br>Sunday: 12:00 PM – 6:00 PM</p>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon">📞</div>
+            <div>
+              <h4>Contact</h4>
+              <p>WhatsApp: +60 11-1234 5678<br>Email: techfixkl@gmail.com</p>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-icon">🚗</div>
+            <div>
+              <h4>Getting Here</h4>
+              <p>Near Dato' Keramat LRT Station (5 min walk). Street parking available along Jalan Dato' Keramat.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="map-container">
+            <div class="map-placeholder">
+              <div class="map-emoji">🗺️</div>
+              <p style="font-size:.9rem; font-weight:700; color:#fff;">Taman Dato' Keramat, KL</p>
+              <p style="margin-top:6px;">No. 12, Jalan Dato' Keramat 4/2</p>
+              <a class="map-link"
+                 href="https://maps.google.com/?q=Taman+Dato+Keramat+Kuala+Lumpur"
+                 target="_blank">Open in Google Maps ↗</a>
+            </div>
+          </div>
+          <div class="map-embed-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7440!2d101.7280!3d3.1780!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37c5b5f5e3a1%3A0x0!2sTaman+Dato'+Keramat%2C+Kuala+Lumpur!5e0!3m2!1sen!2smy!4v1699999999999!5m2!1sen!2smy"
+              width="100%" height="220" style="border:0; display:block;"
+              allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <strong>TechFix KL</strong> · Jalan Dato' Keramat 4/2, 55300 KL<br>
+    © 2025 TechFix KL. All rights reserved.
+  </footer>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 2 — ABOUT US
+══════════════════════════════════════ -->
+<div id="about" class="page">
+  <div class="section-wrap">
+    <span class="pill">Our Story</span>
+    <div class="section-title">The Faces Behind TechFix 👋</div>
+    <p class="section-sub">We're just two friends from KL who are genuinely obsessed with fixing things. No big corporate nonsense — just skill, honesty, and a lot of coffee.</p>
+
+    <div class="about-story fade-in">
+      <h3>How It All Started</h3>
+      <p>TechFix KL started back in 2022 when Haziq and Luqman got tired of seeing friends overpay for simple laptop repairs at big shopping mall shops. Armed with technical skills and a tiny rented space in Dato' Keramat, they opened their doors — and never looked back. What started as word-of-mouth has grown into one of the most trusted repair spots in the neighbourhood.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- Team Member 1 -->
+      <div class="team-card fade-in">
+        <div class="team-photo" style="background: linear-gradient(135deg, #1c2a3a, #ff5c35);">
+          🧑‍🔧
+          <span class="team-photo-label">Co-Founder</span>
+        </div>
+        <div class="team-body">
+          <div class="team-name">Muhammad Haziq</div>
+          <span class="team-age">Age 27</span>
+          <p>Haziq is the hardware wizard of the duo. With a Diploma in Electronics Engineering from Politeknik Sultan Mizan Zainal Abidin and 5+ years of hands-on experience, he can diagnose a faulty motherboard just by looking at it. He handles screen replacements, motherboard repairs, and water damage recovery like second nature.</p>
+          <div class="team-tags">
+            <span class="tag">Hardware Repair</span>
+            <span class="tag">Motherboard</span>
+            <span class="tag">Screen Replacement</span>
+            <span class="tag">Water Damage</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="team-card fade-in">
+        <div class="team-photo" style="background: linear-gradient(135deg, #0d3b55, #3ec9c0);">
+          👨‍💻
+          <span class="team-photo-label">Co-Founder</span>
+        </div>
+        <div class="team-body">
+          <div class="team-name">Ahmad Luqman</div>
+          <span class="team-age">Age 25</span>
+          <p>Luqman is the software guy. A self-taught developer and IT enthusiast, he specialises in virus removal, OS reinstallation, data recovery, and performance tuning. He's the one customers call when their laptop is "acting slow" or they've accidentally deleted everything — he's gotten pretty good at saving the day.</p>
+          <div class="team-tags">
+            <span class="tag">Software &amp; OS</span>
+            <span class="tag">Data Recovery</span>
+            <span class="tag">Virus Removal</span>
+            <span class="tag">Performance Tune</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Values -->
+    <div style="margin-top:48px;">
+      <span class="pill">Our Values</span>
+      <div class="section-title" style="margin-top:8px;">What We Believe In</div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="v-icon">🔍</div>
+          <h3>Diagnosis First</h3>
+          <p>We always diagnose before quoting. No guessing, no unnecessary parts replaced.</p>
+        </div>
+        <div class="value-card">
+          <div class="v-icon">💬</div>
+          <h3>Open Communication</h3>
+          <p>We explain everything in plain Malay or English. No confusing tech talk.</p>
+        </div>
+        <div class="value-card">
+          <div class="v-icon">🌱</div>
+          <h3>Reduce E-Waste</h3>
+          <p>We believe in fixing over throwing away. Good for your wallet, good for the planet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <strong>TechFix KL</strong> · Jalan Dato' Keramat 4/2, 55300 KL<br>
+    © 2025 TechFix KL. All rights reserved.
+  </footer>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 3 — SERVICES
+══════════════════════════════════════ -->
+<div id="services" class="page">
+  <div class="section-wrap">
+    <span class="pill">What We Fix</span>
+    <div class="section-title">Our Repair Services 🔧</div>
+    <p class="section-sub">From cracked screens to corrupted systems — we've got you covered. Prices below are estimates; final quote given after diagnosis.</p>
+
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon">🖥️</div>
+        <h3>Screen Replacement</h3>
+        <p>Cracked, flickering, or dead display? We replace laptop screens for most major brands.</p>
+        <span class="price-tag">RM 180 – RM 450</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🔋</div>
+        <h3>Battery Replacement</h3>
+        <p>Battery draining fast or not charging at all? We swap it out with quality replacement cells.</p>
+        <span class="price-tag">RM 120 – RM 280</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">💧</div>
+        <h3>Water Damage Repair</h3>
+        <p>Spilled something on your laptop? Bring it in ASAP — the faster, the better the chances.</p>
+        <span class="price-tag">RM 150 – RM 500</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🦠</div>
+        <h3>Virus &amp; Malware Removal</h3>
+        <p>Pop-ups everywhere? Laptop running slow? We'll clean it up and secure your system.</p>
+        <span class="price-tag">RM 60 – RM 120</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">💾</div>
+        <h3>Data Recovery</h3>
+        <p>Accidentally deleted files or a failed hard drive? We recover data from most storage types.</p>
+        <span class="price-tag">RM 100 – RM 350</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">⚙️</div>
+        <h3>OS Reinstallation</h3>
+        <p>Windows or macOS acting up? Fresh reinstall with all drivers configured properly.</p>
+        <span class="price-tag">RM 80 – RM 150</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">❄️</div>
+        <h3>Overheating / Cleaning</h3>
+        <p>Fan noise, sudden shutdowns? Deep cleaning and thermal paste replacement.</p>
+        <span class="price-tag">RM 60 – RM 120</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">⌨️</div>
+        <h3>Keyboard Replacement</h3>
+        <p>Stuck keys, spilled liquid on keyboard, or missing keys? We'll sort it out.</p>
+        <span class="price-tag">RM 100 – RM 220</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🔌</div>
+        <h3>Charging Port Repair</h3>
+        <p>Loose or broken charging port? We repair or replace DC jacks and USB-C ports.</p>
+        <span class="price-tag">RM 80 – RM 180</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">📦</div>
+        <h3>RAM &amp; SSD Upgrade</h3>
+        <p>Slow laptop? Upgrading RAM or switching to an SSD can make it feel brand new again.</p>
+        <span class="price-tag">RM 80 – RM 300 (parts incl.)</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Second-Hand Listings -->
+    <span class="pill" style="background:var(--teal); color:#fff;">Pre-Loved Devices</span>
+    <div class="sh-title" style="margin-top:10px;">Second Hand Laptops &amp; Tablets 💼</div>
+    <p class="section-sub">All devices are tested, cleaned, and come with a 14-day warranty. Stock changes frequently — WhatsApp us to check availability!</p>
+
+    <div class="sh-grid">
+
+      <div class="sh-card fade-in">
+        <div class="sh-thumb">
+          💻
+          <span class="sh-condition cond-good">Good</span>
+        </div>
+        <div class="sh-body">
+          <h4>Lenovo ThinkPad E14</h4>
+          <p>Intel Core i5-10th Gen · 8GB RAM · 256GB SSD · 14" FHD</p>
+          <div class="sh-price">RM 1,100</div>
+        </div>
+      </div>
+
+      <div class="sh-card fade-in">
+        <div class="sh-thumb" style="background: linear-gradient(135deg,#e0e8f0,#c8d8e8);">
+          💻
+          <span class="sh-condition cond-good">Good</span>
+        </div>
+        <div class="sh-body">
+          <h4>HP Pavilion 15</h4>
+          <p>AMD Ryzen 5 · 8GB RAM · 512GB SSD · 15.6" FHD</p>
+          <div class="sh-price">RM 1,350</div>
+        </div>
+      </div>
+
+      <div class="sh-card fade-in">
+        <div class="sh-thumb" style="background: linear-gradient(135deg,#e8e0f0,#d0c0e8);">
+          💻
+          <span class="sh-condition cond-fair">Fair</span>
+        </div>
+        <div class="sh-body">
+          <h4>Dell Inspiron 14</h4>
+          <p>Intel Core i3-8th Gen · 4GB RAM · 128GB SSD · 14" HD</p>
+          <div class="sh-price">RM 650</div>
+        </div>
+      </div>
+
+      <div class="sh-card fade-in">
+        <div class="sh-thumb" style="background: linear-gradient(135deg,#f0ece0,#e8e0c8);">
+          📱
+          <span class="sh-condition cond-good">Good</span>
+        </div>
+        <div class="sh-body">
+          <h4>Samsung Tab A8</h4>
+          <p>10.5" Display · 4GB RAM · 64GB Storage · WiFi</p>
+          <div class="sh-price">RM 580</div>
+        </div>
+      </div>
+
+      <div class="sh-card fade-in">
+        <div class="sh-thumb" style="background: linear-gradient(135deg,#e0f0e8,#c8e8d0);">
+          💻
+          <span class="sh-condition cond-good">Good</span>
+        </div>
+        <div class="sh-body">
+          <h4>ASUS VivoBook 15</h4>
+          <p>Intel Core i5-11th Gen · 8GB RAM · 512GB SSD · 15.6"</p>
+          <div class="sh-price">RM 1,450</div>
+        </div>
+      </div>
+
+      <div class="sh-card fade-in">
+        <div class="sh-thumb" style="background: linear-gradient(135deg,#f0e8e0,#e8d0c0);">
+          📱
+          <span class="sh-condition cond-fair">Fair</span>
+        </div>
+        <div class="sh-body">
+          <h4>Huawei MatePad T10</h4>
+          <p>9.7" Display · 2GB RAM · 32GB Storage · WiFi</p>
+          <div class="sh-price">RM 320</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="stock-cta">
+      <div class="cta-icon">📲</div>
+      <div class="cta-text">
+        <strong>Want to check current stock?</strong>
+        <span>Stock changes daily. WhatsApp us for the latest list, photos &amp; prices.</span>
+      </div>
+      <a href="https://wa.me/601112345678" target="_blank">WhatsApp Us 💬</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <strong>TechFix KL</strong> · Jalan Dato' Keramat 4/2, 55300 KL<br>
+    © 2025 TechFix KL. All rights reserved.
+  </footer>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 4 — INQUIRY
+══════════════════════════════════════ -->
+<div id="inquiry" class="page">
+  <div class="inquiry-wrap">
+    <span class="pill">Get In Touch</span>
+    <div class="section-title" style="margin-top:10px;">Send Us a Repair Request 📩</div>
+    <p class="section-sub">Fill in the form below and we'll get back to you within 1 hour during operating hours. Or WhatsApp us directly for a faster reply!</p>
+
+    <div class="form-card fade-in">
+      <form id="inquiryForm">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="e.g. Ahmad Ali" required/>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" placeholder="e.g. 011-1234 5678" required/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="e.g. ali@email.com" required/>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="serviceType">Service Needed</label>
+            <select id="serviceType">
+              <option>Screen Replacement</option>
+              <option>Battery Replacement</option>
+              <option>Water Damage Repair</option>
+              <option>Virus / Malware Removal</option>
+              <option>Data Recovery</option>
+              <option>OS Reinstallation</option>
+              <option>Overheating / Cleaning</option>
+              <option>Keyboard Replacement</option>
+              <option>Charging Port Repair</option>
+              <option>RAM / SSD Upgrade</option>
+              <option>Second Hand Device Inquiry</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="brand">Laptop / Device Brand</label>
+            <input type="text" id="brand" placeholder="e.g. Lenovo, HP, ASUS"/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="issue">Describe the Issue</label>
+          <textarea id="issue" placeholder="Tell us what's happening with your device. The more detail, the better!" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">🚀 Send My Request</button>
+      </form>
+      <div id="form-msg"></div>
+    </div>
+
+    <div class="inquiry-aside">
+      <div class="aside-card fade-in">
+        <div class="aside-icon" style="background:#e8f5e9;">💬</div>
+        <div>
+          <h4>Prefer WhatsApp?</h4>
+          <p>Chat with us directly at
+            <a class="aside-link" href="https://wa.me/601112345678" target="_blank">+60 11-1234 5678</a>
+          </p>
+        </div>
+      </div>
+      <div class="aside-card fade-in">
+        <div class="aside-icon" style="background:#fff0ed;">⏱️</div>
+        <div>
+          <h4>Response Time</h4>
+          <p>We reply within 1 hour during operating hours (10am–8pm daily)</p>
+        </div>
+      </div>
+      <div class="aside-card fade-in">
+        <div class="aside-icon" style="background:#e8f0ff;">📍</div>
+        <div>
+          <h4>Walk-Ins Welcome</h4>
+          <p>No appointment needed — just walk in to No. 12, Jalan Dato' Keramat 4/2, KL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <strong>TechFix KL</strong> · Jalan Dato' Keramat 4/2, 55300 KL<br>
+    © 2025 TechFix KL. All rights reserved.
+  </footer>
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
